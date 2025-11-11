@@ -19,11 +19,12 @@ class Person {
 
 class Student extends Person {
     constructor(name, age) {
-        super(name, age); 
+        super(name, age); // Call the parent constructor
     }
 
     study() {
-        return `${this.name} is studying`; 
+        console.log(`${this.name} is studying`); // This logs the message to the console
+        return `${this.name} is studying`; // Return the message
     }
 }
 
@@ -33,6 +34,7 @@ class Teacher extends Person {
     }
 
     teach() {
+		  console.log(`${this.name} is teaching`);
         return `${this.name} is teaching`; 
     }
 }
